@@ -13,6 +13,6 @@ url: npfe.github.io
 doc:
   libraries:
     JNW_EXA_SKY130A:
-      - JNW_EX
+      - JNW_EXA
 sim:
   JNW_EXA: make all
