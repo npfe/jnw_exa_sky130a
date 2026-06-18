@@ -1,20 +1,18 @@
 library: JNW_EXA_SKY130A
 cell: JNW_EXA
 # Your name
-author: Anonymous
+author: Nicolas Pfefferle
 # Your github username
-github: analogicus
+github: npfe
 # Something funny and descriptive
-tagline: The answer is 42
+tagline: Cascode current mirror design.
 # Your email, if you so wish
-email: anon@anon.com
+email: nicolas.pfefferle@gmail.com
 # Your github site, usually <github username>.github.io
-url: analogicus.github.io
+url: npfe.github.io
 doc:
-  # Make docs
-  #libraries:
-  #   <library>:
-  #       - <cell>
-  #       - <cell>
+  libraries:
+    JNW_EXA_SKY130A:
+      - JNW_EX
 sim:
-  # <simdir>: command
+  JNW_EXA: make all
