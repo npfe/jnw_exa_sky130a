@@ -1,0 +1,32 @@
+* Measure JNW_EXA
+.control
+
+load {cicname}.raw
+
+echo "MEAS_START"
+
+    *----------------------------------------------------------------
+    * IMPORTANT: set target current here
+    *----------------------------------------------------------------
+    let iexp        = 20u
+
+    * Evaluation window: V0 = 0.80V to 1.95V
+    let iout_part       = abs(i(v0)[41, 196])
+    let err_pct         = 100 * (iout_part - iexp) / iexp
+
+    * Nominal accuracy at V0 = 1.8V
+    let iout_nom        = abs(i(v0)[180])
+    let acc_nom_pct     = 100 * (iout_nom - iexp) / iexp
+
+    * Behaviour over compliance region
+    let avg_err_pct     = mean(err_pct)
+    let flatness_pct    = stddev(err_pct)
+    let worst_pct       = maximum(abs(err_pct))
+
+    meas dc max_current MIN i(v0) FROM=0.41 TO=1.95
+    meas dc min_current MAX i(v0) FROM=0.41 TO=1.95
+
+    print acc_nom_pct avg_err_pct flatness_pct worst_pct
+
+echo "MEAS_END"
+.endc

@@ -10,12 +10,11 @@ nicolas
 
 # Why
 
-<explain why you made this module>
+Test current mirror with a cascode configuration and observe stability of the circuit.
 
 # How
 
-<explain short how you made this module>
-
+sky130a pdk, xschem for schematic, magic vlsi for layout, ngspice for simulations. CICSIM and Python for ploting.p
 
 # What
 
@@ -29,16 +28,16 @@ nicolas
 
 | Version | Status | Comment|
 | :---| :---| :---|
-|0.1.0 | :x: | Make something |
-
+|0.1.0 | :X: | Using JNWATR_NCH_2C5F0 NFET |
+|0.2.0 | :X: | Using JNWATR_NCH_2C5F0 NFET |
 
 # Signal interface
 
-| Signal       | Direction | Domain  | Description                               |
-| :---         | :---:     | :---:   | :---                                      |
-| VDD_1V8         | Input     | VDD_1V8 | Main supply                              |
-| VSS         | Input     | Ground  |                                           |
-| PWRUP_1V8     | Input    | VDD_1V8 | Power up the circuit                       |
+| Signal       | Direction | Domain  | Description           |
+| :---         | :---:     | :---:   | :---:                 |
+| IBP          | Input     | 1.95V   | Current mirror input  |
+| IBN          | Output    | 1.95V   | Current mirror output |
+| VSS          | Input     | Ground  |                       |
 
 
 # Key parameters

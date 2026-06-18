@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>README</title>
+  <style type="text/css">
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide section level4">
+
+<p>TB_NCM</p>
+</div>
+<div id="transient-analysis-tran" class="slide section level4">
+<h1>Transient analysis (tran)</h1>
+<p>Check transient operation</p>
+<table>
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Name</strong></th>
+<th align="left"><strong>Parameter</strong></th>
+<th align="left"><strong>Description</strong></th>
+<th align="right"></th>
+<th align="center"><strong>Min</strong></th>
+<th align="center"><strong>Typ</strong></th>
+<th align="center"><strong>Max</strong></th>
+<th align="right">Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><strong>r_drop</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"></td>
+<td align="center"><strong>0.000</strong></td>
+<td align="center"></td>
+<td align="right"><strong>V</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td
+align="right"><a href='results/tran_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center">0.807</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_etc.html'>Sch_etc</a></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_mc.html'>Sch_3std</a></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><strong>x1_drain</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"></td>
+<td align="center"><strong>0.000</strong></td>
+<td align="center"></td>
+<td align="right"><strong>V</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td
+align="right"><a href='results/tran_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center">0.963</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_etc.html'>Sch_etc</a></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_mc.html'>Sch_3std</a></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><strong>x2_drain</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"></td>
+<td align="center"><strong>0.000</strong></td>
+<td align="center"></td>
+<td align="right"><strong>V</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td
+align="right"><a href='results/tran_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center">0.156</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_etc.html'>Sch_etc</a></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_mc.html'>Sch_3std</a></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><strong>ibns_out</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"></td>
+<td align="center"><strong>0.000</strong></td>
+<td align="center"></td>
+<td align="right"><strong>uA</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td
+align="right"><a href='results/tran_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center">0.395</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_etc.html'>Sch_etc</a></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/tran_Sch_mc.html'>Sch_3std</a></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="sweep-analysis-sweep" class="slide section level4">
+<h1>Sweep analysis (sweep)</h1>
+<p>Check stability over variating Vout</p>
+<table>
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Name</strong></th>
+<th align="left"><strong>Parameter</strong></th>
+<th align="left"><strong>Description</strong></th>
+<th align="right"></th>
+<th align="center"><strong>Min</strong></th>
+<th align="center"><strong>Typ</strong></th>
+<th align="center"><strong>Max</strong></th>
+<th align="right">Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><strong>max_current</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"><strong>-21.000</strong></td>
+<td align="center"><strong>-20.000</strong></td>
+<td align="center"><strong>-19.000</strong></td>
+<td align="right"><strong>uA</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td
+align="right"><a href='results/sweep_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center">-20.757</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/sweep_Sch_etc.html'>Sch_etc</a></td>
+<td align="center">-20.920</td>
+<td align="center">-20.756</td>
+<td align="center">-20.612</td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/sweep_Sch_mc.html'>Sch_3std</a></td>
+<td align="center"><span
+style="color:red"><strong>-21.920</strong></span></td>
+<td align="center">-20.661</td>
+<td align="center">-19.401</td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><strong>min_current</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"><strong>-21.000</strong></td>
+<td align="center"><strong>-20.000</strong></td>
+<td align="center"><strong>-19.000</strong></td>
+<td align="right"><strong>uA</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td
+align="right"><a href='results/sweep_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center">-19.600</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/sweep_Sch_etc.html'>Sch_etc</a></td>
+<td align="center">-19.655</td>
+<td align="center">-19.588</td>
+<td align="center">-19.533</td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/sweep_Sch_mc.html'>Sch_3std</a></td>
+<td align="center">-20.711</td>
+<td align="center">-19.508</td>
+<td align="center"><span
+style="color:red"><strong>-18.305</strong></span></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><strong>flatness_pct</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"></td>
+<td align="center"><strong>0.0</strong></td>
+<td align="center"></td>
+<td align="right"><strong>%</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td
+align="right"><a href='results/sweep_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center">1.6</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/sweep_Sch_etc.html'>Sch_etc</a></td>
+<td align="center">1.4</td>
+<td align="center">1.6</td>
+<td align="center">1.9</td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/sweep_Sch_mc.html'>Sch_3std</a></td>
+<td align="center">1.5</td>
+<td align="center">1.6</td>
+<td align="center">1.7</td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><strong>worst_pct</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"></td>
+<td align="center"><strong>0.0</strong></td>
+<td align="center"></td>
+<td align="right"><strong>%</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td
+align="right"><a href='results/sweep_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center">3.8</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/sweep_Sch_etc.html'>Sch_etc</a></td>
+<td align="center">3.1</td>
+<td align="center">3.8</td>
+<td align="center">4.6</td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/sweep_Sch_mc.html'>Sch_3std</a></td>
+<td align="center">0.7</td>
+<td align="center">4.5</td>
+<td align="center">8.4</td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><strong>acc_nom_pct</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"></td>
+<td align="center"><strong>0.0</strong></td>
+<td align="center"></td>
+<td align="right"><strong>%</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td
+align="right"><a href='results/sweep_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center">3.3</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/sweep_Sch_etc.html'>Sch_etc</a></td>
+<td align="center">2.7</td>
+<td align="center">3.3</td>
+<td align="center">4.1</td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/sweep_Sch_mc.html'>Sch_3std</a></td>
+<td align="center">-3.4</td>
+<td align="center">2.9</td>
+<td align="center">9.1</td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"><strong>avg_err_pct</strong></td>
+<td align="left"></td>
+<td align="right"><strong>Spec</strong></td>
+<td align="center"><strong>-5.0</strong></td>
+<td align="center"><strong>0.0</strong></td>
+<td align="center"><strong>5.0</strong></td>
+<td align="right"><strong>%</strong></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td
+align="right"><a href='results/sweep_Sch_typical.html'>Sch_typ</a></td>
+<td align="center"></td>
+<td align="center">1.3</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/sweep_Sch_etc.html'>Sch_etc</a></td>
+<td align="center">0.9</td>
+<td align="center">1.3</td>
+<td align="center">1.6</td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="right"><a href='results/sweep_Sch_mc.html'>Sch_3std</a></td>
+<td align="center"><span
+style="color:red"><strong>-5.4</strong></span></td>
+<td align="center">0.8</td>
+<td align="center"><span
+style="color:red"><strong>7.0</strong></span></td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+#<name>:
+#  src:
+#    - <paramters>
+#  typ: <typical spec value>
+#  name: <long name>
+#  min: <minimum spec value>
+#  max: <maximum spec value>
+#  scale: <scale, multiply result by scale>
+#  digits: <significant digits>
+#  unit: Unit
+
+
+iout:
+  src:
+    - max_current
+    - min_current
+  scale: 1e6
+  unit: uA
+  digits: 3
+  typ: -20
+  min: 5%
+  max: -5%
+
+idev:
+  src:
+    - flatness_pct
+    - worst_pct
+    - avg_err_pct
+  unit: '%'
+  digits: 1
+
+acc:
+  src:
+    - acc_nom_pct
+  unit: '%'
+  digits: 1
+  typ: 0
+  min: -5
+  max: 5
+
+

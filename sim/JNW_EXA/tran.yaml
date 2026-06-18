@@ -1,0 +1,43 @@
+#<name>:
+#  src:
+#    - <paramters>
+#  typ: <typical spec value>
+#  name: <long name>
+#  min: <minimum spec value>
+#  max: <maximum spec value>
+#  scale: <scale, multiply result by scale>
+#  digits: <significant digits>
+#  unit: Unit
+
+
+rvd:
+  src:
+    - r_drop
+  scale: 1
+  unit: V 
+  digits: 3
+
+vx1d:
+  src:
+    - x1_drain
+  scale: 1
+  unit: V
+  digits: 3
+
+vx2d:
+  src:
+    - x2_drain
+  scale: 1
+  unit: V
+  digits: 3
+
+
+ibn:
+  src:
+    - ibns_out
+  scale: 1e6
+  unit: uA
+  digits: 3
+
+
+

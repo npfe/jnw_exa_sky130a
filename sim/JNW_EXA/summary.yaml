@@ -1,0 +1,39 @@
+description: TB_NCM
+simulations:
+  tran:
+    name: Transient analysis
+    description: |
+      Check transient operation
+    data:
+      - name: Sch_typ
+        src: results/tran_Sch_typical
+        method: typical
+      - name: Sch_etc
+        src: results/tran_Sch_etc
+        method: minmax
+      - name: Sch_3std
+        src: results/tran_Sch_mc
+        method: 3std
+  sweep:
+      name: Sweep analysis
+      description: |
+        Check stability over variating Vout
+      data:
+      - name: Sch_typ
+        src: results/sweep_Sch_typical
+        method: typical
+      - name: Sch_etc
+        src: results/sweep_Sch_etc
+        method: minmax
+      - name: Sch_3std
+        src: results/sweep_Sch_mc
+        method: 3std
+      - name: Lay_typ
+        src: results/sweep_Sch_typical
+        method: typical
+      - name: Lay_etc
+        src: results/sweep_Sch_etc
+        method: minmax
+      - name: Lay_3std
+        src: results/sweep_Sch_mc
+        method: 3std
