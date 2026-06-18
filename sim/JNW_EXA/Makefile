@@ -9,7 +9,7 @@ TB=sweep
 #VIEW=Sch
 VIEW=Lay
 CELL=JNW_EXA
-LIB =JNW_EXA_130A
+LIB =JNW_EXA_SKY130A
 OPT=
 
 include ../../tech/make/sim.make
@@ -46,6 +46,9 @@ summary:
 
 slide:
 	pandoc -s  -t slidy README.md -o README.html
+
+fix_layout_paths:
+	sed -i "s|~/pro/aicex/ip/$(shell echo $(LIB) | tr A-Z a-z)/design|..|g" ../../design/$(LIB)/$(CELL).mag
 
 
 clean:
