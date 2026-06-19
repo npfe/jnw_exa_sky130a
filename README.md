@@ -63,10 +63,9 @@ sky130a pdk, xschem for schematic, magic vlsi for layout, ngspice for simulation
 Using transistors `JNWATR_NCH_12CF0` with a channel length of `6um`.
 
 Sweeping V<sub>out</sub> from 0 to 1.95V current matching looks like this:
-
-
-Sweeping V<sub>out</sub> from 0 to 1.95V current matching looks like this:
 ![Iout vs Vout](media/plot_i_out_20260619_094746.png)
+
+and the distribution of current looks like this:
 
 ![Iout distribution](/media/plot_i_out_20260619_094746_dist.png)
 
