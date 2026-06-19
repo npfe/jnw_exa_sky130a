@@ -39,12 +39,13 @@ if __name__ == "__main__":
             return pd.DataFrame(data=arrs[0], columns=plots[0]["varnames"])
     
     RAW_DIR = Path(r"./output_sweep")
+    OUTPUT_DIR = "../../media"
     RAW_TOKEN = "SchGtKttmmTtVt"
     X_COL = "v(v-seep)"
     COMPLEX_MODE = "real"
     SIGNALS_TO_KEEP = None
     SIGNAL_NAME = 'i_out'
-    X_MIN_DIST = 0.8
+    X_MIN_DIST = 0.4
 
     # Save outputs
     CSV_OUT = "all_raw_data_long.csv"
@@ -170,7 +171,7 @@ if __name__ == "__main__":
     plt.title("Distribution of Iout for Vout ≥ 0.4 V")
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
-    plt.savefig(f"media/plot_{safe_name}_dist.png", dpi=150)
+    plt.savefig(f"{OUTPUT_DIR}/plot_{safe_name}_dist.png", dpi=150)
 
 
     # One figure per signal; one line per file
@@ -195,7 +196,7 @@ if __name__ == "__main__":
         )
 
         fig.tight_layout()
-    plt.savefig(f"media/plot_{safe_name}.png", dpi=150)
+    plt.savefig(f"{OUTPUT_DIR}/plot_{safe_name}.png", dpi=150)
 
 
     stats = dist_df["y"].describe(percentiles=[0.01, 0.05, 0.5, 0.95, 0.99])
@@ -228,7 +229,7 @@ if __name__ == "__main__":
         rows=stats_rows
     )
 
-    stats_txt_path = f"media/global_stats_x_ge_{str(X_MIN_DIST).replace('.', 'p')}_{timestamp}.txt"
+    stats_txt_path = f"{OUTPUT_DIR}/global_stats_x_ge_{str(X_MIN_DIST).replace('.', 'p')}_{timestamp}.txt"
 
     with open(stats_txt_path, "w", encoding="utf-8") as f:
         f.write(f"Global distribution statistics\n")
