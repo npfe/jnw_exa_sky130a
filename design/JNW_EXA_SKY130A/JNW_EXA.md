@@ -16,9 +16,9 @@ Sweeping V<sub>out</sub> from 0 to 1.95V current matching looks like this:
 
 
 Sweeping V<sub>out</sub> from 0 to 1.95V current matching looks like this:
-![Iout vs Vout](../../sim/JNW_EXA/media/plot_i_out_20260617_215852.png)
+![Iout vs Vout](../../media/plot_i_out_20260618_151701.png)
 
-![Iout distribution](../../sim/JNW_EXA/media/plot_i_out_20260617_215852_dist.png)
+![Iout distribution](../../media/plot_i_out_20260618_151701_dist.png)
 
 Global distribution statistics
 Condition: x_V >= 0.4 V
@@ -38,5 +38,9 @@ Condition: x_V >= 0.4 V
 | max    | 21.6214  |
 
 
-Simulation parameters: `mc 30 loops` - see [sweep.spi](../../sim/JNW_EXA/sweep.spi),
+Simulation parameters: `mc 30 loops` - see [sweep.spi](../../sim/JNW_EXA/sweep.spi).
+
+### Next steps
+
+To make the current matching even better, a longer channel 
 

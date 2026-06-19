@@ -6,15 +6,16 @@
 [![SIM](../../actions/workflows/sim.yaml/badge.svg)](../../actions/workflows/sim.yaml)
 
 # Who
-nicolas
+Nicolas Pfefferle
 
 # Why
 
-Test current mirror with a cascode configuration and observe stability of the circuit.
+Out of curiosity, looking at the benefits of using a cascode current mirror versus the very simple one from the first tutorial exercise.
 
 # How
 
-sky130a pdk, xschem for schematic, magic vlsi for layout, ngspice for simulations. CICSIM and Python for ploting.p
+sky130a pdk, xschem for schematic, magic vlsi for layout, ngspice for simulations. CICSIM and Python for ploting current distributions.
+
 
 # What
 
@@ -28,8 +29,7 @@ sky130a pdk, xschem for schematic, magic vlsi for layout, ngspice for simulation
 
 | Version | Status | Comment|
 | :---| :---| :---|
-|0.1.0 | :X: | Using JNWATR_NCH_2C5F0 NFET |
-|0.2.0 | :X: | Using JNWATR_NCH_2C5F0 NFET |
+|0.1.0 | :X: | Using JNWATR_NCH_12C5F0 NFET |
 
 # Signal interface
 
