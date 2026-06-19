@@ -29,11 +29,11 @@ simulations:
         src: results/sweep_Sch_mc
         method: 3std
       - name: Lay_typ
-        src: results/sweep_Sch_typical
+        src: results/sweep_Lay_typical
         method: typical
       - name: Lay_etc
-        src: results/sweep_Sch_etc
+        src: results/sweep_Lay_etc
         method: minmax
       - name: Lay_3std
-        src: results/sweep_Sch_mc
+        src: results/sweep_Lay_mc
         method: 3std
